@@ -1,4 +1,5 @@
 import { EnvelopeIcon, DevicePhoneMobileIcon, MapPinIcon } from '@heroicons/react/24/outline';
+import Link from 'next/dist/client/link';
 
 export default function ContactSection() {
     return (
@@ -20,13 +21,13 @@ export default function ContactSection() {
                         <DevicePhoneMobileIcon className="w-10 h-10 text-purple-400 mb-4" />
                         <h3 className="text-xl font-bold text-white mb-2">WhatsApp</h3>
                         <p className="text-gray-400">Para um contato mais rápido</p>
-                        <a href="#" className="text-purple-400 hover:text-purple-300 mt-1">(67) 99999-9999</a>
+                        <a href="https://wa.me/5567984157550" className="text-purple-400 hover:text-purple-300 mt-1">(67) 98415-7550</a>
                     </div>
                     <div className="bg-gray-900 p-8 rounded-2xl border border-gray-800 text-center flex flex-col items-center">
                         <MapPinIcon className="w-10 h-10 text-purple-400 mb-4" />
                         <h3 className="text-xl font-bold text-white mb-2">Localização</h3>
                         <p className="text-gray-400">Atendimento remoto e local</p>
-                        <p className="text-purple-400 mt-1">Três Lagoas, MS - Brasil</p>
+                        <a href="https://maps.app.goo.gl/qR86Y3pXXbxVtfiV9" target="_blank" className="text-purple-400 mt-1 hover:underline">Três Lagoas, MS - Brasil</a>
                     </div>
                 </div>
             </div>
