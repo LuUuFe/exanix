@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Header() {
@@ -7,7 +6,13 @@ export default function Header() {
             <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
                 <Link href="/" className="flex items-center space-x-3">
                     <div className="w-8 h-8 flex flex-col justify-around">
-                        <Image src="/logos/exanix-white.png" alt="Exanix Logo" width={60} height={40} />
+                        <div className="h-1 bg-gray-200 rounded-full flex items-center justify-end space-x-1 pr-1">
+                            <div className="w-1 h-1 bg-black rounded-full"></div>
+                        </div>
+                        <div className="h-4 bg-transparent border-l-2 border-b-2 border-r-2 border-gray-200 flex items-end justify-around pb-0.5">
+                            <div className="w-1 h-1 bg-gray-200 rounded-full"></div>
+                            <div className="w-1 h-1 bg-gray-200 rounded-full"></div>
+                        </div>
                     </div>
                     <h1 className="text-2xl font-extrabold text-white">Exanix</h1>
                 </Link>
@@ -17,6 +22,9 @@ export default function Header() {
                     </Link>
                     <Link href="#mercado" className="text-gray-400 hover:text-white font-medium transition-colors duration-300">
                         Mercado
+                    </Link>
+                    <Link href="#parcerias" className="text-gray-400 hover:text-white font-medium transition-colors duration-300">
+                        Parcerias
                     </Link>
                     <Link href="#sobre" className="text-gray-400 hover:text-white font-medium transition-colors duration-300">
                         Sobre
