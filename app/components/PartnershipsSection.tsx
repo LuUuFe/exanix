@@ -37,6 +37,7 @@ export default function PartnershipsSection() {
                                 width={250}
                                 height={80}
                                 className="object-contain filter grayscale opacity-60"
+                                unoptimized
                             />
                         </div>
                     </div>
@@ -53,6 +54,7 @@ export default function PartnershipsSection() {
                                         width={120}
                                         height={40}
                                         className="object-contain filter grayscale opacity-60"
+                                        unoptimized
                                     />
                                 </div>
                             ))}

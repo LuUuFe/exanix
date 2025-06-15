@@ -20,7 +20,7 @@ export default function Header() {
         <header className="bg-black/50 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-800">
             <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
                 <Link href="/" className="flex items-center space-x-3">
-                    <Image src="/logos/exanix-white.png" alt="Exanix Logo" width={40} height={40} />
+                    <Image src="/logos/exanix-white.png" alt="Exanix Logo" width={40} height={40} unoptimized />
                     <h1 className="text-2xl font-extrabold text-white">Exanix</h1>
                 </Link>
 

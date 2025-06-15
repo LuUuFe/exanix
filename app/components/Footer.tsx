@@ -9,6 +9,7 @@ export default function Footer() {
                     alt="Exanix Logo"
                     width={60}
                     height={60}
+                    unoptimized
                 />
             </div>
             <div className="container mx-auto px-6 text-gray-500 text-center">
