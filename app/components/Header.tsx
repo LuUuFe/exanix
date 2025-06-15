@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const Header = () => {
+export default function Header() {
     return (
         <header className="bg-black/50 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-800">
             <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -23,13 +23,14 @@ const Header = () => {
                     <Link href="#mercado" className="text-gray-400 hover:text-white font-medium transition-colors duration-300">
                         Mercado
                     </Link>
-                    <Link href="#estrategia" className="text-gray-400 hover:text-white font-medium transition-colors duration-300">
-                        Estratégia
+                    <Link href="#sobre" className="text-gray-400 hover:text-white font-medium transition-colors duration-300">
+                        Sobre
+                    </Link>
+                    <Link href="#contato" className="text-gray-400 hover:text-white font-medium transition-colors duration-300">
+                        Contato
                     </Link>
                 </div>
             </nav>
         </header>
     );
-};
-
-export default Header;
+}
