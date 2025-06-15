@@ -13,7 +13,7 @@ export default function Footer() {
             </div>
             <div className="container mx-auto px-6 text-gray-500 text-center">
                 <div className="flex justify-center gap-x-6 gap-y-2 flex-wrap mb-6">
-                    <a href="#" className="hover:text-white transition-colors duration-300">Instagram</a>
+                    <a href="https://www.instagram.com/exanix_official/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300">Instagram</a>
                     <a href="#" className="hover:text-white transition-colors duration-300">Facebook</a>
                     <a href="#" className="hover:text-white transition-colors duration-300">LinkedIn</a>
                     <a href="#" className="hover:text-white transition-colors duration-300">Mercado Livre</a>
