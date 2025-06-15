@@ -1,3 +1,20 @@
+import Image from 'next/image';
+
+const partnerBrands = [
+    { name: 'ThunderX3', logoSrc: '/logos/thunderx3.png' },
+    { name: 'Fortrek', logoSrc: '/logos/fortrek.png' },
+    { name: 'AEROCOOL', logoSrc: '/logos/aerocool.png' },
+    { name: 'C3TECH', logoSrc: '/logos/c3tech.png' },
+    { name: 'STREAMPLIFY', logoSrc: '/logos/streamplify.png' },
+    { name: 'HP', logoSrc: '/logos/hp.png' },
+    { name: 'BENQ', logoSrc: '/logos/benq.png' },
+    { name: 'MULTILASER', logoSrc: '/logos/multilaser.png' },
+    { name: 'XIAOMI', logoSrc: '/logos/xiaomi.png' },
+    { name: 'LOGITECH', logoSrc: '/logos/logitech.png' },
+    { name: 'JBL', logoSrc: '/logos/jbl.png' },
+    { name: 'YAMAHA', logoSrc: '/logos/yamaha.png' },
+];
+
 export default function PartnershipsSection() {
     return (
         <section id="parcerias" className="py-20 md:py-28 scroll-mt-20">
@@ -9,31 +26,36 @@ export default function PartnershipsSection() {
                     </p>
                 </div>
 
-                <div className="max-w-4xl mx-auto">
+                <div className="max-w-5xl mx-auto">
                     {/* Fornecedor Principal */}
-                    <div className="mb-12">
+                    <div className="mb-16">
                         <h3 className="text-sm uppercase tracking-widest text-gray-500 text-center mb-4">Fornecedor Principal</h3>
-                        <div className="bg-gray-900 p-8 rounded-2xl border border-purple-500/30 shadow-2xl shadow-purple-500/10 text-center">
-                            <h4 className="text-4xl font-bold text-white">HAYAMAX</h4>
+                        <div className="bg-white/5 p-8 h-40 rounded-2xl flex items-center justify-center border border-white/10 transition-all duration-300 hover:bg-white/10 hover:border-purple-500/30 group">
+                            <Image
+                                src="/logos/hayamax.svg"
+                                alt="Logótipo da HAYAMAX"
+                                width={250}
+                                height={80}
+                                className="object-contain filter grayscale opacity-60"
+                            />
                         </div>
                     </div>
 
                     {/* Outras Marcas */}
                     <div>
                         <h3 className="text-sm uppercase tracking-widest text-gray-500 text-center mb-4">Marcas em Destaque</h3>
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                            <div className="bg-white/5 p-6 rounded-xl flex items-center justify-center border border-white/10">
-                                <p className="text-xl font-semibold text-gray-300">NVIDIA</p>
-                            </div>
-                            <div className="bg-white/5 p-6 rounded-xl flex items-center justify-center border border-white/10">
-                                <p className="text-xl font-semibold text-gray-300">INTEL</p>
-                            </div>
-                            <div className="bg-white/5 p-6 rounded-xl flex items-center justify-center border border-white/10">
-                                <p className="text-xl font-semibold text-gray-300">AMD</p>
-                            </div>
-                            <div className="bg-white/5 p-6 rounded-xl flex items-center justify-center border border-white/10">
-                                <p className="text-xl font-semibold text-gray-300">LOGITECH</p>
-                            </div>
+                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                            {partnerBrands.map((brand) => (
+                                <div key={brand.name} className="bg-white/5 p-6 h-32 rounded-xl flex items-center justify-center border border-white/10 transition-all duration-300 hover:bg-white/10 hover:border-purple-500/30 group">
+                                    <Image
+                                        src={brand.logoSrc}
+                                        alt={`${brand.name} logo`}
+                                        width={120}
+                                        height={40}
+                                        className="object-contain filter grayscale opacity-60"
+                                    />
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
