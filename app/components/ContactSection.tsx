@@ -1,5 +1,4 @@
 import { EnvelopeIcon, DevicePhoneMobileIcon, MapPinIcon } from '@heroicons/react/24/outline';
-import Link from 'next/dist/client/link';
 
 export default function ContactSection() {
     return (
